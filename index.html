@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lista de Presentes | Nosso Casamento</title>
+
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       MENU FIXO
+  ========================= -->
+
+  <nav aria-label="Navegação principal">
+    <a class="monograma" href="#inicio" aria-label="Início — Helitia e Jean">H <span>&amp;</span> J</a>
+    <div class="links-navegacao">
+      <a href="#inicio">Início</a>
+      <a href="#casa">Nosso Lar</a>
+      <a href="#lua">Lua de Mel</a>
+    </div>
+  </nav>
+
+
+  <!-- =========================
+       CABEÇALHO
+  ========================= -->
+
+  <header>
+
+    <h1>
+      Nosso Casamento
+    </h1>
+
+    <p>
+      Uma nova história começa aqui ♡
+    </p>
+
+  </header>
+
+
+  <!-- =========================
+       INTRODUÇÃO
+  ========================= -->
+
+  <section
+    id="inicio"
+    class="introducao container"
+  >
+
+    <h2>
+      Aos nossos padrinhos
+    </h2>
+
+    <p>
+
+      Vocês foram escolhidos para estar ao nosso lado
+      em um dos momentos mais importantes das nossas vidas.
+
+      <br><br>
+
+      Preparamos esta lista com muito carinho,
+      pensando no nosso novo lar e nos sonhos
+      que estamos começando a construir juntos.
+
+      <br><br>
+
+      Escolham o presente que desejarem.
+      Para nós, o mais importante é ter vocês
+      conosco nesse momento tão especial. ❤️
+
+    </p>
+
+  </section>
+
+
+  <!-- ==================================================
+       NOSSO LAR
+  ================================================== -->
+
+  <section
+    id="casa"
+    class="categoria container"
+  >
+
+    <h2 class="titulo-categoria">
+      Nosso Lar
+    </h2>
+
+    <aside class="endereco-entrega" aria-labelledby="titulo-endereco-entrega">
+      <div class="endereco-conteudo">
+        <h3 id="titulo-endereco-entrega">Endereço para entrega</h3>
+        <address id="texto-endereco-entrega">
+          Rua Bastilha, Qd. 47, Lt. 15<br>
+          Campos Elíseos<br>
+          CEP: 74959-042
+        </address>
+        <p><strong>Referência:</strong> portão preto, muro cinza.</p>
+      </div>
+      <div class="endereco-acoes">
+        <button type="button" class="botao-copiar-endereco" data-action="copy-address">
+          Copiar endereço
+        </button>
+        <span id="enderecoFeedback" class="endereco-feedback" aria-live="polite"></span>
+      </div>
+    </aside>
+
+    <div class="galeria">
+
+
+      <!-- GELADEIRA -->
+
+      <div class="presente">
+
+        <img
+          src="imagens/geladeira.jpg"
+          alt="Geladeira"
+          class="imagem-presente"
+        >
+
+        <h3>
+          Geladeira
+        </h3>
+
+        <p class="status">
+          Disponível
+        </p>
+
+        <button
+          data-action="choose-gift" data-item="Geladeira"
+        >
+          Escolher presente
+        </button>
+
+        <button type="button" class="botao-pix" data-action="pay-pix" data-item="Geladeira">
+          Pagar com Pix
+        </button>
+
+      </div>
+
+
+      <!-- FORNO -->
+
+      <div class="presente">
+
+        <img
+          src="imagens/forno.jpg"
+          alt="Forno elétrico"
+          class="imagem-presente"
+        >
+
+        <h3>
+          Forno elétrico
+        </h3>
+
+        <p class="status">
+          Disponível
+        </p>
+
+        <button
+          data-action="choose-gift" data-item="Forno elétrico"
+        >
+          Escolher presente
+        </button>
+
+        <button type="button" class="botao-pix" data-action="pay-pix" data-item="Forno elétrico">
+          Pagar com Pix
+        </button>
+
+      </div>
+
+
+      <!-- PURIFICADOR -->
+
+      <div class="presente">
+
+        <img
+          src="imagens/purificador.jpg"
+          alt="Purificador de água"
+          class="imagem-presente"
+        >
+
+        <h3>
+          Purificador de água
+        </h3>
+
+        <p class="status">
+          Disponível
+        </p>
+
+        <button
+          data-action="choose-gift" data-item="Purificador de água"
+        >
+          Escolher presente
+        </button>
+
+        <button type="button" class="botao-pix" data-action="pay-pix" data-item="Purificador de água">
+          Pagar com Pix
+        </button>
+
+      </div>
+
+
+      <!-- AR-CONDICIONADO -->
+
+      <div class="presente">
+
+        <img
+          src="imagens/ar-condicionado.png"
+          alt="Ar-condicionado split"
+          class="imagem-presente"
+        >
+
+        <h3>
+          Ar-condicionado
+        </h3>
+
+        <p class="status">
+          Disponível
+        </p>
+
+        <button
+          data-action="choose-gift" data-item="Ar-condicionado"
+        >
+          Escolher presente
+        </button>
+
+        <button type="button" class="botao-pix" data-action="pay-pix" data-item="Ar-condicionado">
+          Pagar com Pix
+        </button>
+
+      </div>
+
+
+      <!-- AIR FRYER -->
+
+      <div class="presente">
+
+        <img
+          src="imagens/airfryer.jpg"
+          alt="Air Fryer"
+          class="imagem-presente"
+        >
+
+        <h3>
+          Air Fryer
+        </h3>
+
+        <p class="status">
+          Disponível
+        </p>
+
+        <button
+          data-action="choose-gift" data-item="Air Fryer"
+        >
+          Escolher presente
+        </button>
+
+        <button type="button" class="botao-pix" data-action="pay-pix" data-item="Air Fryer">
+          Pagar com Pix
+        </button>
+
+      </div>
+
+
+      <!-- SOFÁ -->
+
+      <div class="presente">
+
+        <img
+          src="imagens/sofa.jpg"
+          alt="Sofá"
+          class="imagem-presente"
+        >
+
+        <h3>
+          Sofá
+        </h3>
+
+        <p class="status">
+          Disponível
+        </p>
+
+        <button
+          data-action="choose-gift" data-item="Sofá"
+        >
+          Escolher presente
+        </button>
+
+        <button type="button" class="botao-pix" data-action="pay-pix" data-item="Sofá">
+          Pagar com Pix
+        </button>
+
+      </div>
+
+
+      <!-- MESA -->
+
+      <div class="presente">
+
+        <img
+          src="imagens/mesa.jpg"
+          alt="Mesa de jantar"
+          class="imagem-presente"
+        >
+
+        <h3>
+          Mesa de jantar
+        </h3>
+
+        <p class="status">
+          Disponível
+        </p>
+
+        <button
+          data-action="choose-gift" data-item="Mesa de jantar"
+        >
+          Escolher presente
+        </button>
+
+        <button type="button" class="botao-pix" data-action="pay-pix" data-item="Mesa de jantar">
+          Pagar com Pix
+        </button>
+
+      </div>
+
+
+      <!-- MÁQUINA -->
+
+      <div class="presente">
+
+        <img
+          src="imagens/maquina-lavar.jpg"
+          alt="Máquina de lavar"
+          class="imagem-presente"
+        >
+
+        <h3>
+          Máquina de lavar
+        </h3>
+
+        <p class="status">
+          Disponível
+        </p>
+
+        <button
+          data-action="choose-gift" data-item="Máquina de lavar"
+        >
+          Escolher presente
+        </button>
+
+        <button type="button" class="botao-pix" data-action="pay-pix" data-item="Máquina de lavar">
+          Pagar com Pix
+        </button>
+
+      </div>
+
+
+      <!-- TV -->
+
+      <div class="presente">
+
+        <img
+          src="imagens/tv.jpg"
+          alt="TV"
+          class="imagem-presente"
+        >
+
+        <h3>
+          TV
+        </h3>
+
+        <p class="status">
+          Disponível
+        </p>
+
+        <button
+          data-action="choose-gift" data-item="TV"
+        >
+          Escolher presente
+        </button>
+
+        <button type="button" class="botao-pix" data-action="pay-pix" data-item="TV">
+          Pagar com Pix
+        </button>
+
+      </div>
+
+
+      <!-- CAMA -->
+
+      <div class="presente">
+
+        <img
+          src="imagens/cama.jpg"
+          alt="Cama"
+          class="imagem-presente"
+        >
+
+        <h3>
+          Cama
+        </h3>
+
+        <p class="status">
+          Disponível
+        </p>
+
+        <button
+          data-action="choose-gift" data-item="Cama"
+        >
+          Escolher presente
+        </button>
+
+        <button type="button" class="botao-pix" data-action="pay-pix" data-item="Cama">
+          Pagar com Pix
+        </button>
+
+      </div>
+
+
+      <!-- JOGO DE PANELAS -->
+
+      <div class="presente">
+
+        <img
+          src="imagens/jogo-panelas-brinox.webp"
+          alt="Jogo de panelas Brinox Ceramic Life Smart Plus Areia, 7 peças"
+          class="imagem-presente"
+        >
+
+        <h3>Jogo de panelas Brinox</h3>
+
+        <p class="status">
+          Disponível
+        </p>
+
+        <button
+          data-action="choose-gift" data-item="Jogo de panelas Brinox Ceramic Life Smart Plus Areia, 7 peças"
+        >
+          Escolher presente
+        </button>
+
+        <button type="button" class="botao-pix" data-action="pay-pix" data-item="Jogo de panelas Brinox Ceramic Life Smart Plus Areia, 7 peças">
+          Pagar com Pix
+        </button>
+
+      </div>
+
+
+      <!-- APARELHO DE JANTAR -->
+
+      <div class="presente">
+
+        <img
+          src="imagens/aparelho-jantar-oxford.webp"
+          alt="Aparelho de jantar Oxford Ryo Maresia, 30 peças"
+          class="imagem-presente"
+        >
+
+        <h3>Aparelho de jantar Oxford</h3>
+
+        <p class="status">
+          Disponível
+        </p>
+
+        <button
+          data-action="choose-gift" data-item="Aparelho de jantar Oxford Ryo Maresia, 30 peças"
+        >
+          Escolher presente
+        </button>
+
+        <button type="button" class="botao-pix" data-action="pay-pix" data-item="Aparelho de jantar Oxford Ryo Maresia, 30 peças">
+          Pagar com Pix
+        </button>
+
+      </div>
+
+
+      <!-- PRESENTES JÁ ESCOLHIDOS -->
+
+      <div class="presente presente-escolhido">
+
+        <img
+          src="imagens/fogao.jpg"
+          alt="Fogão"
+          class="imagem-presente"
+        >
+
+        <h3>Fogão</h3>
+
+        <p class="status status-escolhido">Já escolhido</p>
+
+      </div>
+
+      <div class="presente presente-escolhido">
+
+        <img
+          src="imagens/microondas.png"
+          alt="Micro-ondas"
+          class="imagem-presente"
+        >
+
+        <h3>Micro-ondas</h3>
+
+        <p class="status status-escolhido">Já escolhido</p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- ==================================================
+       LUA DE MEL
+  ================================================== -->
+
+  <section
+    id="lua"
+    class="categoria container"
+  >
+
+    <h2 class="titulo-categoria">
+      Nossa Lua de Mel
+    </h2>
+
+    <div class="galeria">
+
+
+      <!-- PASSAGENS -->
+
+      <div class="presente">
+
+        <img
+          src="imagens/passagens.jpg"
+          alt="Passagens aéreas"
+          class="imagem-presente"
+        >
+
+        <h3>
+          Passagens
+        </h3>
+
+        <button
+          data-action="choose-gift" data-item="Cota para as passagens da lua de mel"
+        >
+          Contribuir
+        </button>
+
+        <button type="button" class="botao-pix" data-action="pay-pix" data-item="Cota para as passagens da lua de mel">
+          Pagar com Pix
+        </button>
+
+      </div>
+
+
+      <!-- HOTEL -->
+
+      <div class="presente">
+
+        <img
+          src="imagens/hotel.jpg"
+          alt="Hospedagem"
+          class="imagem-presente"
+        >
+
+        <h3>
+          Hospedagem
+        </h3>
+
+        <button
+          data-action="choose-gift" data-item="Cota para hospedagem da lua de mel"
+        >
+          Contribuir
+        </button>
+
+        <button type="button" class="botao-pix" data-action="pay-pix" data-item="Cota para hospedagem da lua de mel">
+          Pagar com Pix
+        </button>
+
+      </div>
+
+
+      <!-- JANTAR -->
+
+      <div class="presente">
+
+        <img
+          src="imagens/jantar.jpg"
+          alt="Jantar romântico"
+          class="imagem-presente"
+        >
+
+        <h3>
+          Jantar romântico
+        </h3>
+
+        <button
+          data-action="choose-gift" data-item="Jantar romântico na lua de mel"
+        >
+          Contribuir
+        </button>
+
+        <button type="button" class="botao-pix" data-action="pay-pix" data-item="Jantar romântico na lua de mel">
+          Pagar com Pix
+        </button>
+
+      </div>
+
+
+      <!-- PASSEIO -->
+
+      <div class="presente">
+
+        <img
+          src="imagens/passeio.jpg"
+          alt="Passeio"
+          class="imagem-presente"
+        >
+
+        <h3>
+          Passeio especial
+        </h3>
+
+        <button
+          data-action="choose-gift" data-item="Passeio especial na lua de mel"
+        >
+          Contribuir
+        </button>
+
+        <button type="button" class="botao-pix" data-action="pay-pix" data-item="Passeio especial na lua de mel">
+          Pagar com Pix
+        </button>
+
+      </div>
+
+
+      <!-- COTA LIVRE -->
+
+      <div class="presente">
+
+        <img
+          src="imagens/lua-de-mel.jpg"
+          alt="Lua de mel"
+          class="imagem-presente"
+        >
+
+        <h3>
+          Cota para a Lua de Mel
+        </h3>
+
+        <button
+          data-action="choose-gift" data-item="Cota livre para a lua de mel"
+        >
+          Contribuir
+        </button>
+
+        <button type="button" class="botao-pix" data-action="pay-pix" data-item="Cota livre para a lua de mel">
+          Pagar com Pix
+        </button>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       RODAPÉ
+  ========================= -->
+
+  <footer>
+
+    <div class="coracao">
+      ♡
+    </div>
+
+    <p>
+      Obrigado por fazerem parte desse momento tão especial!
+    </p>
+
+    <p>
+      Com carinho, os noivos ❤️
+    </p>
+
+  </footer>
+
+  <form name="reservas-presentes" method="POST" data-netlify="true" hidden>
+    <input type="hidden" name="form-name" value="reservas-presentes">
+    <input type="text" name="nome">
+    <input type="text" name="presente">
+  </form>
+
+
+  <!-- =========================
+       MODAL
+  ========================= -->
+
+  <div
+    id="modal"
+    class="modal"
+  >
+
+    <div class="modal-conteudo">
+
+      <h3>
+        Escolher presente
+      </h3>
+
+      <p id="presenteSelecionado">
+      </p>
+
+      <input
+        type="text"
+        id="nomePessoa"
+        placeholder="Digite seu nome"
+      >
+
+      <button
+        class="confirmar"
+        data-action="confirm-gift"
+      >
+        Confirmar escolha ❤️
+      </button>
+
+      <button
+        class="fechar"
+        data-action="close-gift-modal"
+      >
+        Cancelar
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <div
+    id="modalPix"
+    class="modal"
+  >
+
+    <div class="modal-conteudo pix-conteudo">
+
+      <h3>Pagamento via Pix</h3>
+
+      <p id="presentePixSelecionado"></p>
+
+      <img
+        src="imagens/pix-qrcode.png"
+        alt="QR Code Pix de Jean Vitor dos Santos"
+        class="pix-qrcode"
+      >
+
+      <p>
+        O valor é livre. Informe o valor desejado no aplicativo do seu banco.
+      </p>
+
+      <div class="pix-dados">
+        <p><strong>Recebedor:</strong> Jean Vitor dos Santos</p>
+        <p><strong>Chave Pix (celular):</strong> <span id="chavePixTexto">16981492681</span></p>
+      </div>
+
+      <button
+        type="button"
+        class="confirmar"
+        data-action="copy-pix-key"
+      >
+        Copiar chave Pix
+      </button>
+
+      <p id="pixFeedback" class="pix-feedback" aria-live="polite"></p>
+
+      <input
+        type="text"
+        id="nomePagadorPix"
+        placeholder="Seu nome"
+      >
+
+      <input
+        type="number"
+        id="valorPagadorPix"
+        placeholder="Valor pago (opcional)"
+        min="0.01"
+        step="0.01"
+      >
+
+      <button
+        type="button"
+        class="confirmar"
+        data-action="notify-pix"
+      >
+        Já fiz o Pix — avisar pelo WhatsApp
+      </button>
+
+      <div class="aviso-pix" role="note">
+        <span class="aviso-pix-icone" aria-hidden="true">!</span>
+        <div>
+          <strong>ATENÇÃO</strong>
+          <p>Depois de fazer o Pix, mande uma mensagem pelo WhatsApp dizendo qual presente escolheu, para atualizarmos a lista.</p>
+        </div>
+      </div>
+
+      <button
+        type="button"
+        class="fechar"
+        data-action="close-pix-modal"
+      >
+        Fechar
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================= -->
+
+  <script src="script.js" defer></script>
+
+
+</body>
+
+</html>
