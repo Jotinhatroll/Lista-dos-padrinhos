@@ -1443,35 +1443,120 @@
   outline-offset: 3px;
 }
 
+/* =====================================
+   AJUSTE FINAL DA GALERIA DE PRESENTES
+===================================== */
+
+.galeria {
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px;
+  width: 100%;
+}
+
+.galeria > .presente {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  flex: initial;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background: #FFFFFF;
+  border: 1px solid #E5D9F0;
+  box-shadow: 0 4px 14px rgba(81, 71, 95, 0.07);
+}
+
+.galeria > .presente:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(81, 71, 95, 0.12);
+}
+
+.galeria .imagem-presente {
+  width: 100%;
+  height: 145px;
+  object-fit: contain;
+  padding: 7px;
+  border-radius: 10px;
+  background: #FCFAFD;
+}
+
+.galeria .presente h3 {
+  min-height: 36px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #51475F;
+  text-align: center;
+}
+
+.galeria .status {
+  align-self: center;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.galeria .presente button {
+  width: 100%;
+  min-height: 34px;
+  font-size: 11px;
+  border-radius: 8px;
+}
+
 /* PRESENTES JÁ ESCOLHIDOS */
 
-.presente-escolhido {
+.galeria .presente-escolhido {
   background: #F9F6FC;
-  border: 1px solid #E5D9F0;
-  opacity: 0.88;
+  border-color: #E5D9F0;
   cursor: default;
 }
 
-.presente-escolhido:hover {
+.galeria .presente-escolhido:hover {
   transform: none;
-  box-shadow: 0 4px 16px rgba(81, 71, 95, 0.055);
 }
 
-.presente-escolhido .imagem-presente {
-  filter: grayscale(15%);
-}
-
-.presente-escolhido h3 {
-  color: #71677E;
-}
-
-.presente-escolhido .status-escolhido {
+.galeria .presente-escolhido .status-escolhido {
   margin: auto auto 0;
-  padding: 7px 18px;
+  padding: 7px 12px;
   background: #EEE8F5;
   border: 1px solid #DDD0EA;
-  border-radius: 999px;
+  border-radius: 20px;
   color: #77658E;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 600;
 }
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1000px) {
+  .galeria {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 750px) {
+  .galeria {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .galeria {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .galeria .imagem-presente {
+    height: 125px;
+  }
+
+  .galeria .presente h3 {
+    font-size: 12px;
+  }
+}
+
