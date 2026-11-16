@@ -177,42 +177,31 @@ let presenteAtual = "";
     }
 
 
-    async function confirmarPresente() {
-      const nome = document.getElementById("nomePessoa").value.trim();
+    
+function confirmarPresente() {
+  const nome = document.getElementById("nomePessoa").value.trim();
 
-      if (!nome) {
-        alert("Por favor, digite seu nome. ❤️");
-        return;
-      }
+  if (!nome) {
+    alert("Por favor, digite seu nome. ❤️");
+    return;
+  }
 
-      const dados = new URLSearchParams({
-        "form-name": "reservas-presentes",
-        nome,
-        presente: presenteAtual,
-      });
+  const mensagem =
+    `Olá, noivos! ❤️\n\n` +
+    `Gostaria de confirmar minha escolha de presente:\n\n` +
+    `🎁 Presente: ${presenteAtual}\n` +
+    `👤 Meu nome: ${nome}\n\n` +
+    `Estou confirmando minha escolha na lista de presentes. ❤️`;
 
-      try {
-        const resposta = await fetch("/", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-          },
-          body: dados.toString(),
-        });
+  const telefone = "5516981492681";
 
-        if (!resposta.ok) {
-          throw new Error("O envio da reserva falhou.");
-        }
+  const url =
+    `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
 
-        alert("Escolha registrada! Os noivos receberão um aviso por e-mail. ❤️");
-        fecharModal();
-      } catch (erro) {
-        alert(
-          "O aviso automático será ativado quando o site estiver publicado no Netlify. " +
-          "Por enquanto, avise os noivos pelo WhatsApp. ❤️"
-        );
-      }
-    }
+  window.open(url, "_blank");
+
+  fecharModal();
+}
 
 
     /* Fechar clicando fora */
