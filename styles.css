@@ -1424,3 +1424,21 @@
         padding: 0 14px;
       }
     }
+/* Card de Pix: botão principal fixo na base, alinhado aos outros cards */
+.presente-pix .botao-pix {
+  margin-top: auto;
+  background: #9D8CBD;
+  color: #FFFFFF;
+  border: 0;
+}
+
+.presente-pix .botao-pix:hover {
+  background: #8876A8;
+  color: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+.presente-pix .botao-pix:focus-visible {
+  outline: 2px solid #6e568f;
+  outline-offset: 3px;
+}
