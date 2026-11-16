@@ -1442,3 +1442,36 @@
   outline: 2px solid #6e568f;
   outline-offset: 3px;
 }
+
+/* PRESENTES JÁ ESCOLHIDOS */
+
+.presente-escolhido {
+  background: #F9F6FC;
+  border: 1px solid #E5D9F0;
+  opacity: 0.88;
+  cursor: default;
+}
+
+.presente-escolhido:hover {
+  transform: none;
+  box-shadow: 0 4px 16px rgba(81, 71, 95, 0.055);
+}
+
+.presente-escolhido .imagem-presente {
+  filter: grayscale(15%);
+}
+
+.presente-escolhido h3 {
+  color: #71677E;
+}
+
+.presente-escolhido .status-escolhido {
+  margin: auto auto 0;
+  padding: 7px 18px;
+  background: #EEE8F5;
+  border: 1px solid #DDD0EA;
+  border-radius: 999px;
+  color: #77658E;
+  font-size: 11px;
+  font-weight: 600;
+}
